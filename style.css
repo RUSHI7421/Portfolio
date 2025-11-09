@@ -728,4 +728,181 @@ section:not(:first-of-type) {
   }
 }
 
+/* =================== RESPONSIVENESS ADDITIONS (SAFE TO APPEND) =================== */
+/* ⚠️ Do not remove or change your existing code. Just paste this at the bottom. */
+
+/* For tablets and small laptops */
+@media (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  nav ul {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .about-text p {
+    font-size: 1.1rem;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .about-image img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .project-image {
+    width: 80%;
+    margin-top: 20px;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .logo .avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hero .intro {
+    font-size: 1rem;
+  }
+
+  .name {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+
+  .tagline {
+    font-size: 1.2rem;
+    padding: 0 15px;
+  }
+
+  .desc {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+
+  .about {
+    padding: 40px 20px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .about-image img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .skills-heading {
+    font-size: 2rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .projects-heading {
+    font-size: 2.5rem;
+  }
+
+  .project-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .project-info p {
+    font-size: 1rem;
+  }
+
+  .footer {
+    padding: 40px 15px;
+  }
+
+  .footer-heading {
+    font-size: 1.4rem;
+  }
+
+  .social-links a img {
+    width: 28px;
+    height: 28px;
+  }
+
+  #outer {
+    width: 95%;
+    height: auto;
+    padding: 20px 0;
+  }
+}
+
+/* For very small screens (under 400px) */
+@media (max-width: 400px) {
+  .name {
+    font-size: 2.2rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
+  }
+
+  .skill-card img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+}
+
+
 
